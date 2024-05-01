@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/patitas.css">
+    <link rel="icon" type="image/x-icon" href="./images/patita.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <button id="Abrir" class="AbrirMenu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="Cerrar" class="CerrarMenu"><i class="bi bi-x-lg"></i></button>
+            <ul class="nav-list">
+                <li><a href="servicio-ducha.html"> Baño y Peluquería </a></li>
+                <li><a href="servicio-consulta.html"> Consulta Veterinaria </a></li>
+                <li><a href="servicio-guarderia.html"> Guardería </a></li>
+                <li><a href="servicio-paseo.html"> Paseos </a></li>
+                <li><a href="servicio-vacuna.html"> Vacunación </a></li>
+            </ul>
+        </nav>
+        <div class="patita">
+            <img class="logo" src="./images/patita.png" alt="logo">
+            <h1>PATITAS</h1>
+        </div>
+        <div>
+            <button class="btn btn-secondary" id="Mostrar">Iniciar Sesión</button>
+            <a href="registro.html" class="btn btn-secondary">Registrarse</a>
+        </div>
+    </header>
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-6">
+                <a class="item_menu py-3 rounded bg_celeste" id="duchadiv">
+                    <button type="button" class="btn">
+                        <img class="img_icon" src="./images/ducha.png" alt="ducha">
+                        <h4>BAÑO Y PELUQUERÍA</h4>
+                        <p>Descripción del proceso del baño y peluquería para el miembro especial de la familia.</p>
+                    </button>
+                </a>
+                <br>
+                <a class="item_menu py-3 rounded bg_rosa" id="estetoscopiodiv">
+                    <button type="button" class="btn">
+                        <img class="img_icon" src="./images/estetoscopio.png" alt="estetoscopio">
+                        <h4>CONSULTA VETERINARIA</h4>
+                        <p>Estamos en el momento que tu mascota nos necesite o se sienta mal.</p>
+                    </button>
+                </a>
+                <br>
+                <a class="item_menu py-3 rounded bg_morado" id="guarderiadiv">
+                    <button type="button" class="btn">
+                        <img class="img_icon" src="./images/guarderia.png" alt="guarderia">
+                        <h4>GUARDERÍA</h4>
+                        <p>Cuidamos a tus peludos el tiempo que se necesite con la dedicación merecida</p>
+                    </button>
+                </a>
+                <br>
+                <a class="item_menu py-3 rounded bg_rosa" id="paseosdiv">
+                    <button type="button" class="btn">
+                        <img class="img_icon" src="./images/paseos.png" alt="paseos">
+                        <h4>PASEOS</h4>
+                        <p>Reserva un espacio para que tu peludo disfrute del aire libre y ejercicio sano de la mano de
+                            un profesional</p>
+                    </button>
+                </a>
+                <br>
+                <a class="item_menu py-3 rounded bg_celeste" id="vacunadiv">
+                    <button type="button" class="btn">
+                        <img class="img_icon" src="./images/vacuna.png" alt="vacuna">
+                        <h4>VACUNACIÓN</h4>
+                        <p>Contamos con todas las vacunas y medicamentos que tu peludo necesite para llevar una vida
+                            sana.</p>
+                    </button>
+                </a>
+            </div>
+            <div class="col-6">
+                <img class="w-100 mb-3 rounded" src="./images/imagen1.jpg" alt="imagen1">
+                <img class="w-100 mb-3 rounded" src="./images/imagen1,2.jpg" alt="imagen1,2">
+                <div class="max-w-lg mx-auto p-4 border-2 border-black">
+                    <h2 class="font-bold text-lg mb-4 text-center">CONTÁCTANOS!</h2>
+                    <div class="flex items-center gap-4 mb-3">
+                        <i class="bi bi-envelope-at-fill h1"></i>
+                        <span>patitas_contacto@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3">
+                        <i class="bi bi-facebook h1"></i>
+                        <span>Patitas_shop</span>
+                    </div>
+                    <div class="flex items-center gap-4 mb-3">
+                        <i class="bi bi-instagram h1"></i>
+                        <span>@Patitas_shop</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="bi bi-whatsapp h1"></i>
+                        <span>312 345 67 89 - (601) 325 7689</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="login_container rounded shadow-lg" id="Login">
+        <div class="patita">
+            <img class="logo" src="./images/patita.png" alt="logo">
+            <h1>Iniciar sesión</h1>
+        </div>
+        <div class="row px-4">
+            <div class="form-group div_form py-2 col-12">
+                <label for="fullName">Correo electrónico:</label>
+                <input type="text" class="form-control" id="fullName" name="fullName"
+                    placeholder="Ingrese correo">
+            </div>
+
+            <div class="form-group div_form py-2 col-12">
+                <label for="documentNumber">Contraseña:</label>
+                <input type="password" class="form-control" id="documentNumber" name="documentNumber"
+                    placeholder="Ingrese contraseña">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="w-100">
+                <a href="reservas.html" class="btn btn-success d-block m-2 w/auto"
+                    type="submit">Iniciar sesión</a>
+                <a class="btn btn-danger d-block m-2" id="Cancelar" type="reset">Cancelar</a>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body{position:relative}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,Helvetica,sans-serif}
+.logo{max-width:5rem}
+header{display:flex;align-items:center;justify-content:space-between;padding:2rem;background-color:#ececec}
+.nav-list{list-style-type:none;display:flex;gap:1rem}
+.nav-list li a{text-decoration:none;color:#1c1c1c}
+.AbrirMenu .CerrarMenu{display:none}
+.AbrirMenu,.CerrarMenu{display:none}
+.patita{display:flex}
+.patita h1{margin-top:20px}
+@media screen and (max-width:800px){
+.AbrirMenu,.CerrarMenu{display:block;border:0;font-size:1.25rem;background-color:transparent;cursor:pointer}
+.AbrirMenu{color:#1c1c1c}
+.CerrarMenu{color:#ececec}
+.nav{opacity:0;visibility:hidden;display:none;flex-direction:column;align-items:start;gap:1rem;position:absolute;top:100%;left:0;bottom:0;background-color:#1c1c1c;padding:2rem;box-shadow:0 0 0 100vmax rgba(0,0,0,.5);width:100%}
+.navVisible{opacity:1;visibility:visible;display:flex;position:absolute;top:0}
+.nav-list{flex-direction:column;align-items:start}
+.nav-list li a{color:#ecececec}
+}
+.bg_celeste{background-color:#bde0fe}
+.bg_rosa{background-color:#ffafcc}
+.bg_morado{background-color:#cdb4db}
+.img_icon{max-width:5rem}
+.item_menu{text-align:center;display:block}
+.item_menu:hover{color:#000}
+.item_menu img{margin-bottom:10px}
+.item_menu h4{font-weight:600}
+.div_form{float:left}
+.info{margin-bottom:30px;background-color:#f0ecec}
+.f-rigth{float:right}
+.login_container{position:fixed;width:50%;top:150px;right:0;background-color:#fff;display:none}
